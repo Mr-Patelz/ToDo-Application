@@ -1,0 +1,14 @@
+.todo {
+  position: relative;
+  height: 63px;
+  font-size: 18px;
+  padding: 21px 72px 25px 72px;
+  border-bottom: 1px solid var(--circle-border-color);
+  transform: 0.3s;
+
+  &:hover {
+    .todo__delete-btn {
+      transform: scale(1);
+    }
+  }
+}

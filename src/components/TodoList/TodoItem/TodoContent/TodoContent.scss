@@ -1,0 +1,11 @@
+.todo__content {
+  color: var(--todo-text-color);
+  font-size: 18px;
+  line-height: 18px;
+  letter-spacing: -0.25px;
+}
+
+.cross-out {
+  color: #d1d2da;
+  text-decoration: line-through;
+}

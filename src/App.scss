@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&family=Spartan:wght@700&display=swap');
+
+*,
+*::before,
+*::after {
+  font-family: 'Josefin Sans', sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.darkTheme {
+  --primary-bg-color: #171823;
+  --secondary-bg-color: #25273d;
+  --bg-image: url('./images/bg-desktop-dark.jpg') no-repeat;
+  --box-shadow: 0px 35px 50px -15px rgba(0, 0, 0, 0.5);
+  --circle-border-color: #393a4c;
+  --input-placeholder-text-color: #767992;
+  --input-text-color: #c8cbe7;
+  --todo-text-color: #c8cbe7;
+  --status-bar-btn-color: #5b5e7e;
+  --status-bar-btn-hover-color: #e3e4f1;
+}
+
+:root {
+  --primary-bg-color: #fafafa;
+  --secondary-bg-color: #fff;
+  --bg-image: url('./images/bg-desktop-light.jpg') no-repeat;
+  --box-shadow: 0px 35px 50px -15px rgba(194, 195, 214, 0.5);
+  --circle-border-color: #e3e4f1;
+  --circle-border-hover-and-bg-color: linear-gradient(
+    135deg,
+    #55ddff 0%,
+    #c058f3 100%
+  );
+  --input-placeholder-text-color: #9394a5;
+  --input-text-color: #393a4b;
+  --todo-text-color: #494c6b;
+  --status-bar-btn-color: #9495a5;
+  --status-bar-btn-hover-color: #494c6b;
+  --status-bar-btn-active-color: #3a7cfd;
+}
+
+body,
+#root {
+  width: 100vw;
+  height: 100vh;
+}
+
+body {
+  background: var(--primary-bg-color);
+}
+
+#root {
+  background: var(--bg-image);
+  background-size: contain;
+}
+
+main {
+  max-width: 540px;
+  margin: auto;
+  padding-top: 70px;
+}

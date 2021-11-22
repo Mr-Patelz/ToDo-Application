@@ -1,0 +1,36 @@
+form {
+  height: 64px;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: var(--box-shadow);
+  margin-bottom: 24px;
+  position: relative;
+
+  .circle-box {
+    position: absolute;
+    height: 24px;
+    width: 24px;
+    border: 1px solid var(--circle-border-color);
+    border-radius: 50%;
+    top: 20px;
+    left: 24px;
+  }
+
+  input {
+    height: 100%;
+    width: 100%;
+    border: none;
+    font-size: 18px;
+    line-height: 18px;
+    letter-spacing: -0.25px;
+    color: var(--input-text-color);
+    padding: 23px 72px;
+    outline: none;
+    caret-color: #3a7cfd;
+    background: var(--secondary-bg-color);
+
+    &::placeholder {
+      color: var(--input-placeholder-text-color);
+    }
+  }
+}
